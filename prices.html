@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+   
+  {% for key,value in crypto.DISPLAY.items %}
+
+  <strong>Name: </strong>: {{ key }} <br/>
+  <strong>Price: </strong>: {{value.USD.PRICE}} <br/>
+  <strong>Day HIgh: </strong>: {{value.USD.HIGHDAY}}<br/>
+  <strong>Day Low: </strong>: {{value.USD.LOWDAY}}<br/>
+  <strong>Market Cap: </strong>: {{value.USD.MKTCAP}}<br/>
+  
+  {% endfor %}
+  
+  <br/><br>
+
+    
+
+
+
+
+{% endblock %}
